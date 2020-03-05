@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="coundown.js"></script>
+
+</head>
+<body>
+    <div class="middle">
+         <p class="coundown-new-year">COUNDOWN NEW YEAR</p>
+        <span>2021</span>
+       
+        <p id="cowndown"></p>
+
+
+     <div class="btn">
+            <a href="#" class="btn-small">CLICK TO SMALL</a>
+          
+
+                <a href="#" class="btn-big">CLICK TO BIG</a>
+            </div>
+        </div>
+
+   
+    
+
+
+
+    <script>
+        var dest = new Date("dec 31, 2020 00:00:00").getTime();
+
+        var x = setInterval(function(){
+
+        
+
+var now = new Date().getTime();
+
+  var diff = dest - now; 
+   
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+  var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+  var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+ 
+document.getElementById("cowndown").innerHTML = days + "d " + hours + "hrs " + minutes + "m " + seconds + "s "
+
+}, 1000);
+
+    </script>
+
+
+
+
+
+
+
+
+
+<!-- click to animate js code start  -->
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+      $(".btn-small").click(function(){
+        $("span").css({"transform": "rotate(360deg)", "fontSize": "30px"});
+       
+      });
+
+      $(".btn-big").click(function(){
+        $("span").css({"transform": "rotate(0deg)", "fontSize": "180px"});
+       
+      });
+
+
+    });
+    </script>
+
+<!-- click to animate js code end  -->
+
+</body>
+</html>
