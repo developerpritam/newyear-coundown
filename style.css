@@ -35,7 +35,6 @@ body{
     padding-bottom: 50px;
     font-weight: 500;
     color: #fff;
-    transition: transform 1.4s;
     cursor: pointer;
     animation: mymove 5s linear infinite;
     animation-direction: alternate;
@@ -56,11 +55,6 @@ body{
   }
 }
 
-
- .coundown-new-year:hover{
-    transform: rotateY(180deg);
-   
-}
 
 #cowndown{
     color: #fff;
@@ -142,14 +136,6 @@ body{
     
     .coundown-new-year{
         font-size: 25px !important;
-        transition: letter-spacing .8s;
-        
-      }
-
-
-
-      .coundown-new-year:hover{
-        letter-spacing: 6px !important;
         
       }
 
