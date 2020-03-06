@@ -93,11 +93,12 @@ body{
 
     .middle span{
         font-size: 160px !important;
+        
     }
     
     .coundown-new-year{
         font-size: 27px !important;
-       
+        
     }
 
     @keyframes mymove {
@@ -141,8 +142,17 @@ body{
     
     .coundown-new-year{
         font-size: 25px !important;
+        transition: letter-spacing .8s;
         
       }
+
+
+
+      .coundown-new-year:hover{
+        letter-spacing: 6px !important;
+        
+      }
+
 
       @keyframes mymove {
         0%   {
@@ -195,8 +205,10 @@ body{
     
     .coundown-new-year{
         font-size: 20px !important;
+        
       
     }
+    
     
     #cowndown{
         font-size: 32px !important;
